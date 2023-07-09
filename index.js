@@ -36,11 +36,11 @@ const connect = async()=>{
 app.use(express.json());
 app.use(cors(corsOptions));
 app.use(cookieParser());
-app.use('tours', tourRoute);
-app.use('users', userRoute);
-app.use('auth', authRoute);
-app.use('review', reviewRoute);
-app.use('booking', bookingRoute);
+app.use('/tours', tourRoute);
+app.use('/users', userRoute);
+app.use('/auth', authRoute);
+app.use('/review', reviewRoute);
+app.use('/booking', bookingRoute);
 
 app.listen(port,()=>{
     connect();
